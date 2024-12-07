@@ -13,8 +13,8 @@ all: build
 
 build: python${PYTHON_VERSION}.Dockerfile
 	@./build.sh "$(REPOSITORY)/$(NAME)-linux-amd64" "" "${PYINSTALLER_TAG}" "${ALPINE_VERSION}" "${PYTHON_VERSION}"
-	@./build.sh "$(REPOSITORY)/$(NAME)-linux-armv7" "arm32v7/" "${PYINSTALLER_TAG}" "${ALPINE_VERSION}" "${PYTHON_VERSION}"
-	@./build.sh "$(REPOSITORY)/$(NAME)-linux-arm64" "arm64v8/" "${PYINSTALLER_TAG}" "${ALPINE_VERSION}" "${PYTHON_VERSION}"
+#@./build.sh "$(REPOSITORY)/$(NAME)-linux-armv7" "arm32v7/" "${PYINSTALLER_TAG}" "${ALPINE_VERSION}" "${PYTHON_VERSION}"
+#@./build.sh "$(REPOSITORY)/$(NAME)-linux-arm64" "arm64v8/" "${PYINSTALLER_TAG}" "${ALPINE_VERSION}" "${PYTHON_VERSION}"
 
 push:
 	# Push docker images
