@@ -10,5 +10,6 @@ docker build -f python${PYTHON_VERSION}.Dockerfile -t ${REPOSITORY}:alpine-${ALP
 	--build-arg ARCH=${ARCH} \
 	--build-arg PYINSTALLER_TAG=${PYINSTALLER_TAG} \
 	--build-arg ALPINE_VERSION=${ALPINE_VERSION} \
+	--build-arg PYTHON_VERSION=${PYTHON_VERSION} \
 	.
 

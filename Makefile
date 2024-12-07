@@ -3,9 +3,9 @@
 
 REPOSITORY ?= six8
 NAME := pyinstaller-alpine
-PYINSTALLER_TAG := v3.4
-PYTHON_VERSION := 3.7
-ALPINE_VERSION := 3.12
+PYINSTALLER_TAG := v5
+PYTHON_VERSION := 3.12
+ALPINE_VERSION := 3.20
 BRANCH := $(shell git rev-parse --abbrev-ref HEAD)
 SUFFIX ?= -$(subst /,-,$(BRANCH))
 
